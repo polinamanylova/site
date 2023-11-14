@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Визитная карточка</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="cv">
+        <section>
+            <h1>Манылова Полина</h1>
+            <h2>Мой опыт:</h2>
+
+
+            <div class="cards">
+                <div class="card">
+                        <div class="card-column">
+  <div class="card">
+    <img src="images/cardOP-one.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardOP-two.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardOP-three.png" >
+  </div>
+</div>
+<div class="card-column">
+  <div class="card">
+    <img src="images/cardOP-four.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardOP-five.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardOP-six.png" >
+  </div>
+</div>
+                
+              </div> 
+            </div>
+        </section>
+        <section>
+            <h2>Мои качества:</h2>
+
+            <div class="cards">
+                <div class="card">
+                        <div class="card-column">
+  <div class="card">
+    <img src="images/cardCH-one.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardCH-two.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardCH-three.png" >
+  </div>
+</div>
+<div class="card-column">
+  <div class="card">
+    <img src="images/cardCH-four.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardCH-five.png" >
+  </div>
+  <div class="card">
+    <img src="images/cardCH-six.png" >
+  </div>
+</div>      
+      </div>
+                </div>
+        </section>
+            
+        
+    <form id="ratingForm">
+  <div class="rating">
+      <h3>Оцените анкету по 5-ти бальной шкале</h3>
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">5 звезд</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">4 звезды</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">3 звезды</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">2 звезды</label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">1 звезда</label>
+  </div>
+  <button type="submit">Отправить</button>
+</form>
+
+  
+        
+        
+        <section>
+            <h3>Что бы вы изменили?</h3>
+            <div>
+                <h3>Предложить изменение:</h3>
+                <ul id="skillsList"></ul>
+                <form id="addSkillForm">
+                    <input type="text" id="newSkill" placeholder="Добавить предложение">
+                    <input type="text" id="authorInput" placeholder="Чем оно поможет?">
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src='js/script.js'></script>
+    
+</body>
+
+</html>

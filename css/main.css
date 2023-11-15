@@ -1,0 +1,201 @@
+html {
+  font-family: 'Poppins', sans-serif;
+  --primary-color: #2f80ed;
+  --secondary-color: #333333;
+  --bg-color: #C1E0F2;
+}
+
+html[data-theme=dark] {
+  --primary-color: #2f80ed;
+  --secondary-color: #ffffff;
+  --bg-color: #C1E0F2;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+* {
+  color: var(--secondary-color);
+}
+
+.theme-switch-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.25em;
+  margin-top: 20px;
+  font-size: 55px;
+}
+
+
+img {
+
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.cv {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: calc(50% - 5px); /* Вычитаем margin-right из ширины для создания промежутка между картинками */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%; /* Картинки идут в один столбик на мобильной версии */
+    margin-bottom: 10px; /* Уменьшаем отступ между картинками на мобильной версии */
+  }
+}
+
+
+
+
+
+
+
+
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+
+.experience {
+  display: flex;
+  margin-bottom: 2em;
+}
+.experience__date {
+  min-width: 185px;
+  margin-bottom: 1em;
+}
+.experience__name {
+  font-weight: bold;
+}
+
+@media (max-width: 320px) {
+  .experience {
+    display: block;
+  }
+}
+
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+html.transition,
+html.transition * {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}/*# sourceMappingURL=main.css.map */
+
+.skill-item {
+  margin: 0;
+  color: #333; /* цвет текста */
+  font-size: 14px; /* размер шрифта */
+  /* Другие стили по вашему выбору */
+}
+
+
+/* Добавьте новые стили для темной темы */
+.dark-theme #newSkill,
+.dark-theme #authorInput {
+    color: white !important; /* Добавьте !important для обеспечения приоритета */
+}
+
+.skill-item {
+  /* Ваши общие стили для обеих тем */
+  color: #333;
+}
